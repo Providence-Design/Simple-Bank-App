@@ -1,11 +1,20 @@
 public class Account {
-    private double balance;
-    private int accountNumber;
+    protected double balance;
+    protected int accountNumber;
 
     public Account(int a){
         balance = 0.0;
         accountNumber = a;
     }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
     public void deposit(double sum){
         if(sum>0){
             balance += sum;
